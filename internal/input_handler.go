@@ -21,7 +21,7 @@ func InputHandler() (int, int, string, string, error) {
 
 	elements := strings.Split(line, " ")
 	if len(elements) != 3 {
-		return 0, 0, "", "", errors.New("not enough argumnets error")
+		return 0, 0, "", "", errors.New("not enough arguments error")
 	}
 
 	err := ValidateFormula(elements[0], elements[2], elements[1])
